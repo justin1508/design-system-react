@@ -5,10 +5,10 @@ export default {
   title: 'Components/Heading',
   component: Heading,
   args: {
-    children: 'Loren ipsun',
-    size: 'md'
+    children: 'Lorem ipsum.',
+    size: 'md',
   },
-  argsTypes: {
+  argTypes: {
     size: {
       options: ['sm', 'md', 'lg'],
       control: {
@@ -36,18 +36,18 @@ export const CustomComponent: StoryObj<HeadingProps> = {
   args: {
     asChild: true,
     children: (
-      <h1>Testing</h1>
+      <h1>Heading with H1</h1>
     )
   },
   argTypes: {
     children: {
       table: {
-        disable: true
+        disable: true,
       }
     },
     asChild: {
       table: {
-        disable: true
+        disable: true,
       }
     }
   }

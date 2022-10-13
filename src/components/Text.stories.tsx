@@ -5,10 +5,10 @@ export default {
   title: 'Components/Text',
   component: Text,
   args: {
-    children: 'Loren ipsun',
-    size: 'md'
+    children: 'Lorem ipsum.',
+    size: 'md',
   },
-  argsTypes: {
+  argTypes: {
     size: {
       options: ['sm', 'md', 'lg'],
       control: {
@@ -36,18 +36,18 @@ export const CustomComponent: StoryObj<TextProps> = {
   args: {
     asChild: true,
     children: (
-      <p>Testing</p>
+      <p>Text with P tag</p>
     )
   },
   argTypes: {
     children: {
       table: {
-        disable: true
+        disable: true,
       }
     },
     asChild: {
       table: {
-        disable: true
+        disable: true,
       }
     }
   }
